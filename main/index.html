@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magnet AR</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Staatliches&display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="top-bar">
+        <div class="title">MagnetAR</div>
+      </div>
+      <div class="settings">
+        <div class="ipaddress-container">
+          <h4>Enter this IP on your phone</h4>
+          <h3 id="ipaddress">0.0.0.0</h3>
+        </div>
+        <div class="software-container">
+          <h4>Software</h4>
+          <h5 id="software-type" class="italic">Not connected</h5>
+          <h5 id="software-scene"></h5>
+        </div>
+        <div class="phone-container">
+          <h4>Phone</h4>
+          <h5 id="phone-text" class="italic">Not connected</h5>
+        </div>
+        <div class="stream-container">
+          <button id="start-stream">Start stream</button>
+        </div>
+      </div>
+      <div id="cameras">
+
+      </div>
+      <div class="video-container">
+        <video playsinline autoplay muted></video>
+      </div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

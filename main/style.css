@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  -webkit-user-select: none;
+  -webkit-app-region: no-drag;
+}
+
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 4px groove #eee;
+  -webkit-user-select: none;
+  -webkit-app-region: no-drag;
+}
+
+#draggable {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  -webkit-app-region: drag;
+}
